@@ -9,7 +9,7 @@ export function save(element: string) {
 }
 
 export function get(elementIndex: number): string {
-  if (database.length < elementIndex) {
+  if (database.length <= elementIndex) {
     throw new Error("Index outside of range");
   }
   return database[elementIndex];
